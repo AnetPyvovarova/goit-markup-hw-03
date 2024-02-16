@@ -79,19 +79,6 @@ p {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 /* Page Header  */
 
 .page-header {
@@ -214,6 +201,7 @@ p {
   border: none;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .page-btn:hover,
@@ -223,9 +211,26 @@ p {
 
 /* About Us */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.page-description {
+  padding: 120px 0 120px;
+}
+
 .description-list {
   display: flex;
-  padding: 120px 0px;
 }
 
 .description-name,
@@ -263,54 +268,42 @@ p {
 
 /* Portfolio */
 
-.row-1 {
-  display: flex;
-  gap: 48px 24px;
-  justify-content: space-start;
-  width: 360px;
-}
-
-.row-2 {
-  display: flex;
-  gap: 48px 24px;
-  justify-content: space-start;
-  width: 360px;
+.page-portfolio {
+  padding: 120px 0;
 }
 
 .portfolio-header {
-  padding-top: 120px;
   margin-bottom: 72px;
+}
+
+.row-1,
+.row-2 {
+  padding: 32px 0;
 }
 
 .portfolio-img {
   margin-bottom: 32px;
   width: 360px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-name {
   margin-bottom: 8px;
   width: 360px;
+  text-align: center;
 }
 .portfolio-text {
   width: 360px;
   text-align: center;
 }
 
-.row-1 p {
-  margin-bottom: 80px;
-}
-
-.row-2 p {
-  padding-bottom: 120px;
-}
-
 /*Page Footer*/
 
 .page-footer {
   background: #2e2f42;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
   margin: 0 auto;
+  padding: 100px 0 100px;
+  padding-left: 156px;
 }
 
 .logo-footer {
@@ -321,6 +314,8 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-part-footer {
@@ -329,5 +324,5 @@ p {
 
 .footer-text {
   color: #f4f4fd;
-  width: 264px;
+  max-width: 264px;
 }
