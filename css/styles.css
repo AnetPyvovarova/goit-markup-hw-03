@@ -109,14 +109,15 @@ p {
   display: flex;
   padding-bottom: 25.5px;
   padding-top: 25.5px;
-  padding-left: 15px;
-  margin-right: 147px;
+  padding-left: 200px;
+  margin-right: 76px;
 }
 
 .logo-part-header {
   color: #4d5ae5;
   display: flex;
   list-style-type: none;
+  padding-left: 156px;
 }
 
 .nav-link,
@@ -177,7 +178,7 @@ p {
 }
 
 .address-item:last-child {
-  padding-right: 15px;
+  margin-right: 156px;
 }
 
 /* First Section */
@@ -211,6 +212,8 @@ p {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .page-btn:hover,
@@ -248,16 +251,66 @@ p {
 
 .team-avatar {
   margin-right: 24px;
+  margin-bottom: 32px;
   width: 264px;
-  padding-bottom: 120px;
+}
+
+.team-text {
+  text-align: center;
+  margin-bottom: 8px;
+  padding-bottom: 152px;
 }
 
 /* Portfolio */
+
+.row-1 {
+  display: flex;
+  gap: 48px 24px;
+  justify-content: space-start;
+  width: 360px;
+}
+
+.row-2 {
+  display: flex;
+  gap: 48px 24px;
+  justify-content: space-start;
+  width: 360px;
+}
+
+.portfolio-header {
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.portfolio-img {
+  margin-bottom: 32px;
+  width: 360px;
+}
+
+.portfolio-name {
+  margin-bottom: 8px;
+  width: 360px;
+}
+.portfolio-text {
+  width: 360px;
+  text-align: center;
+}
+
+.row-1 p {
+  margin-bottom: 80px;
+}
+
+.row-2 p {
+  padding-bottom: 120px;
+}
 
 /*Page Footer*/
 
 .page-footer {
   background: #2e2f42;
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 .logo-footer {
@@ -276,4 +329,5 @@ p {
 
 .footer-text {
   color: #f4f4fd;
+  width: 264px;
 }
