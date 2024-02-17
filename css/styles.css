@@ -215,13 +215,11 @@ p {
 }
 
 .page-description {
-  display: flex;
   padding: 120px 0;
 }
 
 .description-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
