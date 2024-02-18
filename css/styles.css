@@ -28,6 +28,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 h1,
 h2,
 h3,
@@ -244,8 +245,6 @@ p {
 .team-list {
   display: flex;
   gap: 24px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .row-team {
@@ -262,7 +261,6 @@ p {
 
 .team-item-avatar {
   margin-bottom: 32px;
-  display: flex;
 }
 
 .team-item-name {
