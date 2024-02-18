@@ -34,8 +34,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -72,7 +72,8 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  .description-text;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -88,14 +89,12 @@ p {
 
 .page-header-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .nav,
 .address {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .nav-list,
@@ -103,11 +102,13 @@ p {
   display: flex;
   gap: 40px;
 }
+.nav-list {
+  padding-left: 76px;
+  padding-right: 332px;
+}
 
 .nav-list-link,
-.address-list-link,
-.shadow {
-  display: flex;
+.address-list-link {
   padding: 24px 0px;
 }
 
@@ -119,26 +120,19 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 
 .part {
   color: #4d5ae5;
   list-style-type: none;
-  margin: auto;
 }
 
-.nav-list-link,
-.shadow {
+.nav-list-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.shadow {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-list :hover,
@@ -236,8 +230,11 @@ p {
 
 /*=== Our Team ===*/
 .our-team {
+}
+
+.team {
+  background: #f4f4fd;
   padding: 120px 0;
-  display: flex;
 }
 
 .team-header {
@@ -246,11 +243,12 @@ p {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  padding: 0px 15px;
 }
 
 .row-team {
-  padding: 32px 0;
+  padding-bottom: 32px;
 }
 
 .team-item {
@@ -295,13 +293,14 @@ p {
 }
 
 .row {
-  padding: 32px 16px;
+  padding-bottom: 32px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
 .portfolio-item-img {
   max-width: 360px;
+  margin-bottom: 32px;
 }
 
 .portfolio-item-name {
@@ -330,8 +329,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 17.5px;
 }
 
 .logo-part-footer {
@@ -341,5 +339,10 @@ p {
 .footer-text {
   color: #f4f4fd;
   max-width: 264px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /*===Page Footer===*/
