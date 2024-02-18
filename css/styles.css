@@ -87,32 +87,17 @@ p {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.page-header-container {
-  display: flex;
-}
-
-.nav,
-.address {
+.header-container {
   display: flex;
   align-items: center;
 }
 
-.nav-list,
-.address-list {
+.nav {
   display: flex;
-  gap: 40px;
-}
-.nav-list {
-  padding-left: 76px;
-  padding-right: 332px;
+  align-items: center;
 }
 
-.nav-list-link,
-.address-list-link {
-  padding: 24px 0px;
-}
-
-.logo-header {
+.logo {
   color: #2e2f42;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -120,11 +105,16 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
-.part {
+.logo-part {
   color: #4d5ae5;
-  list-style-type: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-list-link {
@@ -133,11 +123,22 @@ p {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-list :hover,
 .nav-list :focus {
   color: #404bbf;
+}
+
+.address {
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-list-link {
@@ -147,6 +148,8 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
 .address-list-link:hover,
@@ -258,7 +261,7 @@ p {
 }
 
 .team-item-avatar {
-  width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
   margin-bottom: 32px;
 }
 
