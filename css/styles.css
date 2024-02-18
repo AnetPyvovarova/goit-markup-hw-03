@@ -230,11 +230,8 @@ p {
 
 /*=== Our Team ===*/
 .our-team {
-}
-
-.team {
-  background: #f4f4fd;
   padding: 120px 0;
+  background: #f4f4fd;
 }
 
 .team-header {
@@ -243,12 +240,13 @@ p {
 
 .team-list {
   display: flex;
-  column-gap: 24px;
-  padding: 0px 15px;
+  gap: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .row-team {
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .team-item {
@@ -260,7 +258,7 @@ p {
 }
 
 .team-item-avatar {
-  max-width: 264px;
+  width: 264px;
   margin-bottom: 32px;
 }
 
@@ -293,7 +291,7 @@ p {
 }
 
 .row {
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -329,7 +327,7 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 
 .logo-part-footer {
